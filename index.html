@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ARSxCGI — software, experiments, and digital projects.">
+  <title>ARSxCGI | Projects & Software</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #121a2f;
+      --text: #eef2ff;
+      --muted: #a9b4d0;
+      --accent: #7c9cff;
+      --accent2: #63e6be;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top right, #1c2c58 0, transparent 38%), var(--bg);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap {
+      width: min(1080px, calc(100% - 40px));
+      margin: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+    }
+    .brand { font-weight: 800; letter-spacing: .08em; text-decoration: none; }
+    nav a:not(.brand) {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 22px;
+    }
+    nav a:hover { color: var(--text); }
+    header {
+      padding: 76px 0 92px;
+      max-width: 780px;
+    }
+    .eyebrow {
+      color: var(--accent2);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .8rem;
+    }
+    h1 {
+      font-size: clamp(2.8rem, 8vw, 5.7rem);
+      line-height: 1.02;
+      margin: 18px 0;
+      letter-spacing: -.06em;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 1.2rem;
+      max-width: 620px;
+    }
+    .buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .button {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #071027;
+      font-weight: 750;
+      text-decoration: none;
+    }
+    .button.secondary {
+      background: transparent;
+      border: 1px solid #33456f;
+      color: var(--text);
+    }
+    section { padding: 28px 0 76px; }
+    h2 { font-size: 1.8rem; margin: 0 0 24px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: rgba(18,26,47,.84);
+      border: 1px solid #26365c;
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform .2s, border-color .2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+    }
+    .card h3 { margin: 0 0 8px; }
+    .card p {
+      color: var(--muted);
+      min-height: 52px;
+    }
+    .card a {
+      color: var(--accent2);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    footer {
+      border-top: 1px solid #26365c;
+      color: var(--muted);
+      padding: 28px 0 42px;
+    }
+    @media (max-width: 600px) {
+      nav a:not(.brand) { margin-left: 10px; }
+      header { padding-top: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="/">ARSxCGI</a>
+      <div>
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/ARSxCGI">GitHub</a>
+      </div>
+    </nav>
+
+    <header>
+      <div class="eyebrow">Software · Experiments · Ideas</div>
+      <h1>Building useful things for the digital world.</h1>
+      <p>Welcome to the ARSxCGI project hub — a home for software, creative technology, and experiments in progress.</p>
+      <div class="buttons">
+        <a class="button" href="#projects">Explore projects</a>
+        <a class="button secondary" href="https://github.com/ARSxCGI">View GitHub profile</a>
+      </div>
+    </header>
+
+    <main id="projects">
+      <section>
+        <h2>Featured projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Shadow Protocol</h3>
+            <p>A JavaScript project and ongoing digital experiment.</p>
+            <a href="https://github.com/ARSxCGI/Shadow-Protocol">View repository →</a>
+          </article>
+
+          <article class="card">
+            <h3>ARS Software</h3>
+            <p>The original ARS Software GitHub Pages site and project space.</p>
+            <a href="https://github.com/ARSxCGI/ARS_Software.github.io">View repository →</a>
+          </article>
+
+          <article class="card">
+            <h3>More on GitHub</h3>
+            <p>Browse all public repositories, code, and future releases.</p>
+            <a href="https://github.com/ARSxCGI?tab=repositories">Browse repositories →</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 ARS x CGI</span> · <a href="https://github.com/ARSxCGI">github.com/<b>ARSxCGI</b></a>
+    </footer>
+  </div>
+</body>
+  </html>
