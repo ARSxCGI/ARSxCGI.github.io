@@ -111,6 +111,15 @@
       font-weight: 700;
       text-decoration: none;
     }
+    .card .buttons {
+      margin-top: 18px;
+    }
+    .card .button {
+      color: #071027;
+    }
+    .card .button.secondary {
+      color: var(--text);
+    }
     footer {
       border-top: 1px solid #26365c;
       color: var(--muted);
@@ -148,8 +157,27 @@
         <div class="grid">
           <article class="card">
             <h3>Shadow Protocol</h3>
-            <p>A JavaScript project and ongoing digital experiment.</p>
-            <a href="https://github.com/ARSxCGI/Shadow-Protocol">View repository →</a>
+            <p>
+              Play the Shadow Protocol game, hosted on Render.
+            </p>
+            <div class="buttons">
+              <a
+                class="button"
+                href="https://shadow-protocol-qx8o.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Play game →
+              </a>
+              <a
+                class="button secondary"
+                href="https://github.com/ARSxCGI/Shadow-Protocol"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View source
+              </a>
+            </div>
           </article>
 
           <article class="card">
@@ -172,4 +200,4 @@
     </footer>
   </div>
 </body>
-  </html>
+</html>
